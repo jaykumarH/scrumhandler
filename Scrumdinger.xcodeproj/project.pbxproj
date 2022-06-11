@@ -12,6 +12,7 @@
 		1CB9CB6B2854E7230098E15F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CB9CB6A2854E7230098E15F /* Assets.xcassets */; };
 		1CB9CB6F2854E7230098E15F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CB9CB6E2854E7230098E15F /* Preview Assets.xcassets */; };
 		1CDDA45C2854FF9A00BD6A31 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDDA45B2854FF9A00BD6A31 /* Theme.swift */; };
+		1CDDA45E2855022600BD6A31 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDDA45D2855022600BD6A31 /* DailyScrum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1CB9CB6C2854E7230098E15F /* Scrumdinger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scrumdinger.entitlements; sourceTree = "<group>"; };
 		1CB9CB6E2854E7230098E15F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1CDDA45B2854FF9A00BD6A31 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		1CDDA45D2855022600BD6A31 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				1CDDA45B2854FF9A00BD6A31 /* Theme.swift */,
+				1CDDA45D2855022600BD6A31 /* DailyScrum.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CDDA45E2855022600BD6A31 /* DailyScrum.swift in Sources */,
 				1CDDA45C2854FF9A00BD6A31 /* Theme.swift in Sources */,
 				1CB9CB692854E7210098E15F /* MeetingView.swift in Sources */,
 				1CB9CB672854E7210098E15F /* ScrumdingerApp.swift in Sources */,
