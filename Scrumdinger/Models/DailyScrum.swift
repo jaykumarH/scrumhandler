@@ -10,14 +10,14 @@ import Foundation
 struct DailyScrum: Identifiable {
     var id: UUID
     var title: String
-    var attendees: [String]
+    var attendees: [Attendees]
     var lengthInMinutes: Int
     var theme: Theme
     
     init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme) {
         self.id = id
         self.title = title
-        self.attendees = attendees
+        self.attendees = attendees.map{ Attendees(name: $0) }
         self.lengthInMinutes = lengthInMinutes
         self.theme = theme
     }
@@ -30,4 +30,16 @@ extension DailyScrum {
         DailyScrum(title: "App Dev", attendees: ["Katie", "Gray", "Euna", "Luis", "Darla"], lengthInMinutes: 5, theme: .orange),
         DailyScrum(title: "Web Dev", attendees: ["Chella", "Chris", "Christina", "Eden", "Karla", "Lindsey", "Aga", "Chad", "Jenn", "Sarah"], lengthInMinutes: 5, theme: .poppy)
     ]
+}
+
+extension DailyScrum {
+    struct Attendees: Identifiable {
+        let id: UUID
+        var name: String
+        
+        init(id: UUID = UUID(), name: String) {
+            self.id = id
+            self.name = name
+        }
+    }
 }

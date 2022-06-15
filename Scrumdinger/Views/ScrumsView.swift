@@ -15,7 +15,7 @@ struct ScrumsView: View {
             content: {
                 ForEach(scrums, id: \.id) { scrum in
                     NavigationLink(
-                        destination: Text(scrum.title),
+                        destination: DetailView(scrum: scrum),
                         label: {
                             CardView(scrum: scrum)
                         }
