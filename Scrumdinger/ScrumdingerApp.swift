@@ -14,7 +14,7 @@ struct ScrumdingerApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationView {
-                ScrumsView(scrums: .constant(scrums))
+                ScrumsView(scrums: $scrums)
             }
         }
     }
